@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4C3"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    `
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#C5E1A5"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/images"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/s_in"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Sign in "
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:onClick="sing"/>
+
+        <Button
+            android:id="@+id/s_up"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:onClick="singUp"
+            android:text="create new account"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+        <Button
+            android:id="@+id/n_t"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="not"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Not Now"
+            android:textSize="@dimen/abc_text_size_large_material" />
+    </LinearLayout>
+
+</LinearLayout>
